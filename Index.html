@@ -8,24 +8,22 @@
   	<h1 id="title">Build a Survey Form</h1>
   	<p id="description"> Thank you for taking the time to help us improve the platform</p>
   	<form method="POST" id="survey-form">
-        <div>
-			<label for="name" id="name" >Name</label><br>
-			<input class="input-elm" type="text" name="name" id="name" required placeholder=" Enter Your Name">
-		</div>
-		<br>
 
-		<div>
-			<label for="email"id="email">Email</label><br>
+      <div>
+      <label for="name" id="name-label">Name:</label><br>
+      <input class="input-elm" type="text" name="name" id="name" required placeholder="Your Full Name">
+    </div>
 
-			<input class="input-elm" type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="please enter valid email [test@test.com]." id="email" required placeholder="Enter Your Email">
-		</div>
-	<br>
-		<div>
-			<label for="number" id="number">Age (optional)</label><br>
-			<input class="input-elm" type="number" name="number" id="number" min="18" max="70" message="you can give score 18 to 70 only"required placeholder="Age">
+    <div>
+      <label for="email" id="email-label">Email:</label><br>
+      <input class="input-elm" type="email" name="email" id="email" required placeholder="Your Email ID">
+    </div>
+	
+     <div>
+      <label for="number" id="number-label">Age:</label><br>
+      <input class="input-elm" type="number" name="age" id="number" max="40" min="18" placeholder="Your Age">
+    </div>
 
-		</div>
-	<br>
 		<div>
 			<label for="dropdown">Which option best describes your current role?</label><br>
 		    <select class="select-elm" name="current role" id="dropdown">
@@ -40,14 +38,23 @@
 	<br>
 		<div>
 			<div>Would you recommend freeCodeCamp to a friend?</div>
-			<input type="radio" id="radio" name="radio1" value="1">
-            <label for="radio 1">Definitely</label><br>
+      
+          
 
-            <input type="radio" id="radio" name="radio2" value="2">
-            <label for="radio 2">Maybe</label><br>
 
-            <input type="radio" id="radio" name="radio3" value="3">
-            <label for="other">Not sure</label><br><br>
+           <fieldset id="group1">
+              <input type="radio"  name="look"value="1">
+              <label for="radio 1">Definitely</label> <br>
+
+              <input type="radio"  name="look"value="2">
+              <label for="radio 2">Maybe</label> <br>
+
+
+              <input type="radio"  name="look"value="3">
+              <label for="radio 2">Not Sure</label> <br>
+
+          </fieldset>
+      
 		</div>
 			<br>
 		<div>

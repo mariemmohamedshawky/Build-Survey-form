@@ -47,6 +47,14 @@ input[type=text] {
   margin: 8px 0;
   border-radius: 6px;
 }
+input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 6px;
+}
+
+
 input[type=number] {
   width: 100%;
   padding: 12px 20px;
@@ -74,13 +82,19 @@ input[type=checkbox]
   width: 88%;
   color: white;
   height: 5%; 
+  font-weight: bold;
+  font-size: 15px;
+  
 }
 #text
 {
 	margin: 5px;
 }
 
-
+#group1
+{
+	border: none;
+}
 
 
 
